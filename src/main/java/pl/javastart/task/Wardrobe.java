@@ -4,10 +4,13 @@ public class Wardrobe {
     String material;
     String color;
     int doorsNumber;
-    Wardrobe(){ //napisane w zadaniu stworzyć konstruktor domyślny,wiem, że program kompiluje automatycznie
+    Wardrobe(String material, String color, int doorsNumber){
+        this.material = material;
+        this.color = color;
+        this.doorsNumber = doorsNumber;
 
     }
     void printInfo(){
-        System.out.println(color + " " + "wardrobe has" + " " + doorsNumber + " " + "doors and is made of" + " " + material);
+        System.out.println(color + " " + "wardrobe has" + " " + doorsNumber + " " + "doors and is made of" + " " + material + ".");
     }
 }
